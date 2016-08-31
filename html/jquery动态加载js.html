@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    
+    <script type="text/javascript">
+    //jquery动态加载js.js
+    //方法一
+/*     jQuery.getScript("js/20160830.js")
+		 .done(function() {
+			 test();
+		 })
+		 .fail(function() {
+		  alert('找不到文件');
+	}); */
+	
+    loadjs("js/20160831.js");
+	test();
+    //方法二
+    function loadjs(file){ 
+    	
+         var head = $('head').remove('#loadscript');
+         console.log(head);
+        $("<script>"+"</scr"+"ipt>")
+        .attr({src:file,type:'text/javascript',id:'load'})
+        .appendTo(head);
+    }
+    function sleep(n) {
+        var start = new Date().getTime();
+        while(true)  if(new Date().getTime()-start > n) break;
+        }
+    
+    
+    </script>
+    
+
+</body>
+</html>
