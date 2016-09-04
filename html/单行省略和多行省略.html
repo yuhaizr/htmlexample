@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>移动端样式小技巧</title>
+<script type="text/javascript" src="js/Clamp/clamp.js"></script>
+<!-- <script type="text/javascript" src="js/zepto.js"></script> -->
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/jQuery.dotdotdot/src/jquery.dotdotdot.js"></script>
+<style type="text/css">
+	/* 多行省略 */
+	#dhsn{
+		border: 1px solid;
+	
+	}
+	#dhsn .one{
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		width: 80%;
+		
+	}
+	#dhsn .more{
+		position: relative;
+		
+		line-height: 1.4em;
+		height: 2.8em;
+		overflow: hidden;
+		
+	}
+	#dhsn .more::AFTER{
+		
+		content: "...";
+		position: absolute;
+		    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+   	 background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
+		
+	}
+	#dhsn .more2{
+		overflow : hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		width: 95%;
+	}
+
+	/* 多行省略 */
+	
+	
+	#clamp-this-module{
+		width: 80%;
+	}
+
+</style>
+</head>
+<body>
+
+<hr>
+<h2>单行多行省略</h2>
+
+<div id='dhsn'>
+	<p class='one'>前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案</p>
+	<hr>
+	<p class='more'>前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案</p>
+	<hr>
+	<p class='more2'>前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案</p>
+
+</div>
+
+<hr>
+<h2>clamp 的使用</h2>
+<p id='clamp-this-module'>前端样式文案前端样式文案前端样式文案前端样-式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案</p>
+
+<script type="text/javascript">
+/* var module = document.getElementById("clamp-this-module");
+$clamp(module, {clamp: 1}); */
+$clamp($('#clamp-this-module')[0], {clamp: 1,'splitOnChars':'-1212'});
+</script>
+
+<h2>jquery.dotdotdot 的使用 </h2>
+<div id='clamp-this-module2' class='dot-ellipsis dot-height-50'>
+<p >前端样式文案前端样式文案前端样式文案前端样-式文案前端样式文案前端样式文案前端样式文案前端样式文案前端样式文案</p>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$("#clamp-this-module2").dotdotdot({})
+	});
+
+</script>
+
+
+
+</body>
+</html>
