@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+	body{font:16px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+	a{color:#2d374b;text-decoration:none} 
+	a:hover{color:#cd0200;text-decoration:underline} 
+	em{font-style:normal} 
+	li{list-style:none} 
+	img{border:0;vertical-align:middle} 
+	table{border-collapse:collapse;border-spacing:0} 
+	p{word-wrap:break-word}
+	.main{
+		border: 1px solid #CDCDCD; 
+		width: 60%;
+		margin-left: 20%;
+	}
+	.main .list{
+		padding: 0.5em;
+	}
+	.main .list dl{
+		border-bottom: 1px dashed #CDCDCD;
+	}
+	.main .list dl dt{
+		padding: 0.5em 0em;
+	}
+	.main .list dl dt a{
+		color: #369;
+		font-size: 14px !important;
+		font-weight: 700;
+	}
+	.title h1{
+		font-size: 1em;
+		
+	}
+	.title{
+		height: 2em;
+		line-height: 2em;
+		padding: 0 1em;
+		border-bottom: 1px solid #CDCDCD;
+		background-color: #F2F2F2;
+		font: #444;
+	}
+	.main .list .item_content{
+		font: 0.875em '微软雅黑',Tahoma,Helvetica,'SimSun',sans-serif;
+		color: #444;
+	}
+	.main .list .item_time{
+
+		margin-bottom: 0.5em;
+	}
+	.main .list .item_content{
+		padding-bottom: 0.5em;
+	}
+	.main .list .item_time{
+		font-size: 0.75em;
+		color: #999 ;
+	}
+	.head{
+		width:100%;
+		height:8em;
+	
+		background: url(img/bgbg.jpg);
+	}
+	.head_top{
+		height:4em;
+	}
+	.head_bottom{
+		height:4em;
+	}
+
+	.head nav{
+		
+		overflow: hidden;
+		height:2em;
+		line-height:2em;
+		width: 60%;
+		margin-left: 20%;
+		background: #2B7ACD url(img/nv.png) no-repeat 0 0;
+	}
+	.head ul{
+		
+	}
+	.head ul li {
+		padding:0 1em;
+		float: left;
+		background: url(img/nv_a.png) no-repeat 100% 0;
+		
+	}
+	.head ul li.active{
+		padding:0 1em;
+		float: left;
+		margin-left:-1px;
+		background:#005AB4 url(img/nv_a.png) no-repeat 100% 0;
+		
+	}
+	.head ul li.active+li{
+		margin-left:-1px;
+	}
+	.head ul li a{
+		font-weight: 700;
+		color: #FFF;
+	}
+	.head_bottom{
+		width: 60%;
+		margin-left: 20%;
+	}
+	.head_bottom .fg{
+		width: 16px;
+	    background: url(img/pt_item.png) no-repeat 3px 10px;
+	    overflow: hidden;		
+		float: left;
+	    height: 32px;
+	}
+	.head_bottom .home{
+		width: 16px;
+	    background: url(img/search.png) no-repeat 0px 0px;
+	    overflow: hidden;		
+		float: left;
+	    height: 32px;
+	}
+	.head_bottom .head_bottom_item1, 
+	.head_bottom .head_bottom_item2{
+		float: left;
+		height: 29px;
+   		line-height: 29px;
+		
+	}
+	.head_bottom a {
+		font-size: 0.75em;
+		color: #333;
+	}
+</style>
+
+</head>
+<body>
+	<header class="head">
+		<div class="head_top">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li class="active"><a href="#">HTML5资讯</a></li>
+				<li><a href="#">移动互联网</a></li>
+				<li><a href="#">应用推荐</a></li>
+				<li><a href="#">视频教程</a></li>
+			
+			</ul>
+		</nav>
+		<div class="head_bottom">
+			<a href="#" class="home"></a>
+			<span class="fg"></span>
+			<a href="#" class="head_bottom_item1">首页</a>
+			<span class="fg"></span>
+			<a href="#" class="head_bottom_item2">HTML5资讯</a>
+		</div>
+	</header>
+	<div class="main">
+		<div class="title">
+			<h1>HTML5教程</h1>
+		</div>
+		<div class="list">	
+			<dl>
+				<dt class="item_title">
+					<a href="#">4分钟学会网页样式[译]</a>
+				</dt>
+				<dd  class="item_content">你想要在自己网站上分享一个产品，或者是一个作品集，又或者仅仅只是一个灵感。在你发布到网上之前，你想让它看起来有吸引力，专业，或者至少得看起来像那么回事。那么你接下来该做什么呢？</dd>
+				<dd class="item_time">2016-8-30 08:48</dd>
+			</dl>
+			<dl>
+				<dt class="item_title">
+					<a href="#">4分钟学会网页样式[译]</a>
+				</dt>
+				<dd  class="item_content">你想要在自己网站上分享一个产品，或者是一个作品集，又或者仅仅只是一个灵感。在你发布到网上之前，你想让它看起来有吸引力，专业，或者至少得看起来像那么回事。那么你接下来该做什么呢？</dd>
+				<dd class="item_time">2016-8-30 08:48</dd>
+			</dl>
+			<dl>
+				<dt class="item_title">
+					<a href="#">4分钟学会网页样式[译]</a>
+				</dt>
+				<dd  class="item_content">你想要在自己网站上分享一个产品，或者是一个作品集，又或者仅仅只是一个灵感。在你发布到网上之前，你想让它看起来有吸引力，专业，或者至少得看起来像那么回事。那么你接下来该做什么呢？</dd>
+				<dd class="item_time">2016-8-30 08:48</dd>
+			</dl>
+			<dl>
+				<dt class="item_title">
+					<a href="#">4分钟学会网页样式[译]</a>
+				</dt>
+				<dd  class="item_content">你想要在自己网站上分享一个产品，或者是一个作品集，又或者仅仅只是一个灵感。在你发布到网上之前，你想让它看起来有吸引力，专业，或者至少得看起来像那么回事。那么你接下来该做什么呢？</dd>
+				<dd class="item_time">2016-8-30 08:48</dd>
+			</dl>
+		</div>
+	
+	</div>
+
+
+</body>
+</html>
